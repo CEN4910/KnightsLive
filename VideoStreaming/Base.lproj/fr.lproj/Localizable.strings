@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  VideoStreaming
+
+  Created by Nikil on 12/01/18.
+  Copyright © 2018 Nikil. All rights reserved.
+*/
+
+"day1" = "dimanche";
+"day2" = "Lundi";
+"day3" = "Mardi";
+"day4" = "Mercredi";
+"day5" = "Jeudi";
+"day6" = "Vendredi";
+"day7" = "samedi";
+
+
+"tab1_title" = "Courant";
+"tab2_title" = "Programmes";
+"tab3_title" = "Sur";
+
+"title" = "Laissez les enfants venir à moi";
+"authorName" = "(Matthieu 19:14)";
+
+

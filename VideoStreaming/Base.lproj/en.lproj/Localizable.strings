@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  VideoStreaming
+
+  Created by Nikil on 12/01/18.
+  Copyright © 2018 Nikil. All rights reserved.
+*/
+
+"day1" = "Sunday";
+"day2" = "Monday";
+"day3" = "Tuesday";
+"day4" = "Wednesday";
+"day5" = "Thursday";
+"day6" = "Friday";
+"day7" = "Saturday";
+
+"tab1_title" = "Stream";
+"tab2_title" = "Programs";
+"tab3_title" = "About";
+
