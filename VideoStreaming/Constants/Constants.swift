@@ -55,6 +55,7 @@ public var videoStreamURLfromApi_endpoint:String = "" //"5b18c2c13000006000da137
 
 // API BASE URL
 
+let url = Bundle.main.path(forResource: "schedule", ofType: "json")
 
 public var API_BASE_URL:String = "https://dl.dropbox.com/s/61cffpflki4ldo3/"
 
