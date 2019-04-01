@@ -591,7 +591,6 @@
 				TargetAttributes = {
 					90DBE06320073E49005A7D84 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = T92Y92RB48;
 						ProvisioningStyle = Automatic;
 					};
 					90DBE07720073E49005A7D84 = {
@@ -993,11 +992,11 @@
 			baseConfigurationReference = ED53B680DA243803399DE89B /* Pods-VideoStreaming.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T92Y92RB48;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = VideoStreaming/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = webncrafts.VideoStreaming;
+				PRODUCT_BUNDLE_IDENTIFIER = knightslive.ucf.edu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1009,11 +1008,11 @@
 			baseConfigurationReference = 7DE9490F808E0BDD46CEF16F /* Pods-VideoStreaming.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T92Y92RB48;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = VideoStreaming/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = webncrafts.VideoStreaming;
+				PRODUCT_BUNDLE_IDENTIFIER = knightslive.ucf.edu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YAU-b9-Yhr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YAU-b9-Yhr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Splash View Controller-->
         <scene sceneID="BVp-y9-ce2">
@@ -28,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashlogo" translatesAutoresizingMaskIntoConstraints="NO" id="LvF-Kb-oO6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ucf" translatesAutoresizingMaskIntoConstraints="NO" id="LvF-Kb-oO6">
                                 <rect key="frame" x="126" y="258" width="123" height="123"/>
                             </imageView>
                         </subviews>
@@ -150,7 +143,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnV-Jh-TUq">
-                                        <rect key="frame" x="188" y="4" width="0.0" height="21"/>
+                                        <rect key="frame" x="187.5" y="4" width="0.0" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="6rx-ya-DIY"/>
                                         </constraints>
@@ -159,19 +152,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQO-B0-e37">
-                                        <rect key="frame" x="187" y="25" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="187.5" y="25" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vstream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUp-xS-Fo3">
-                                        <rect key="frame" x="240" y="35" width="63.5" height="20.5"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Knights Live" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUp-xS-Fo3">
+                                        <rect key="frame" x="240" y="35" width="94" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashlogo" translatesAutoresizingMaskIntoConstraints="NO" id="CEx-0N-LBn">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ucf" translatesAutoresizingMaskIntoConstraints="NO" id="CEx-0N-LBn">
                                         <rect key="frame" x="8" y="14" width="111" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="111" id="RiR-Az-wF9"/>
@@ -308,19 +301,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qn-bu-tM1">
-                                        <rect key="frame" x="187" y="25" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="187.5" y="25" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vstream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHt-It-EA3">
-                                        <rect key="frame" x="192" y="33" width="64" height="21"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Knights Live" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHt-It-EA3">
+                                        <rect key="frame" x="192" y="33" width="94" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashlogo" translatesAutoresizingMaskIntoConstraints="NO" id="SpZ-D3-6C9">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ucf" translatesAutoresizingMaskIntoConstraints="NO" id="SpZ-D3-6C9">
                                         <rect key="frame" x="8" y="14" width="111" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="o5r-md-AQ7"/>
@@ -359,10 +352,10 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vb4-DB-yyP">
-                                                            <rect key="frame" x="0.0" y="0.0" width="139" height="60"/>
+                                                            <rect key="frame" x="0.0" y="20" width="139" height="40"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98Z-gU-pfJ">
-                                                                    <rect key="frame" x="26" y="21" width="89" height="20"/>
+                                                                    <rect key="frame" x="25.5" y="10.5" width="89" height="20"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                                     <color key="textColor" red="0.9882352941176471" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -407,7 +400,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_time" translatesAutoresizingMaskIntoConstraints="NO" id="emZ-Zi-TBg">
-                                                    <rect key="frame" x="226" y="29" width="24" height="24"/>
+                                                    <rect key="frame" x="225.5" y="28.5" width="24" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="24" id="muj-yH-edW"/>
                                                         <constraint firstAttribute="height" constant="24" id="v9Z-7e-pdJ"/>
@@ -426,7 +419,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OvQ-nP-7ba">
-                                                    <rect key="frame" x="22" y="43" width="162" height="14"/>
+                                                    <rect key="frame" x="22" y="43" width="161.5" height="14"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -496,7 +489,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Nl-q0-Df1">
-                                <rect key="frame" x="63" y="448" width="250" height="150"/>
+                                <rect key="frame" x="62.5" y="448" width="250" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K66-zm-d6I">
                                         <rect key="frame" x="8" y="8" width="234" height="0.0"/>
@@ -532,13 +525,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jn3-18-vSJ">
-                                                <rect key="frame" x="106" y="13" width="22" height="19"/>
+                                                <rect key="frame" x="106" y="12.5" width="22" height="19"/>
                                                 <connections>
                                                     <action selector="buttonYoutubeAction:" destination="Q4I-rT-YoV" eventType="touchUpInside" id="icc-ac-XBb"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEF-fP-ZgX">
-                                                <rect key="frame" x="157" y="13" width="22" height="19"/>
+                                                <rect key="frame" x="157" y="12.5" width="22" height="19"/>
                                                 <connections>
                                                     <action selector="buttonTwitterAction:" destination="Q4I-rT-YoV" eventType="touchUpInside" id="6Ak-xa-OX7"/>
                                                 </connections>
@@ -559,10 +552,10 @@
                                                 <rect key="frame" x="50" y="12" width="20" height="20"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youtube" translatesAutoresizingMaskIntoConstraints="NO" id="7En-u3-1Bd">
-                                                <rect key="frame" x="106" y="13" width="22" height="19"/>
+                                                <rect key="frame" x="106" y="12.5" width="22" height="19"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="XEc-M5-DGA">
-                                                <rect key="frame" x="157" y="13" width="22" height="19"/>
+                                                <rect key="frame" x="157" y="12.5" width="22" height="19"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -685,19 +678,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gI1-77-2Ww">
-                                        <rect key="frame" x="187" y="25" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="187.5" y="25" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vstream" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdP-hf-pS7">
-                                        <rect key="frame" x="284" y="31" width="56" height="21"/>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Knights Live" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdP-hf-pS7">
+                                        <rect key="frame" x="277" y="31" width="70" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashlogo" translatesAutoresizingMaskIntoConstraints="NO" id="6hc-Bb-sRz">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ucf" translatesAutoresizingMaskIntoConstraints="NO" id="6hc-Bb-sRz">
                                         <rect key="frame" x="8" y="14" width="111" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="111" id="J5b-cv-bV8"/>
@@ -715,7 +708,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIV-TB-QFp">
-                                <rect key="frame" x="63" y="193" width="269" height="53"/>
+                                <rect key="frame" x="63.5" y="193" width="269" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="269" id="gi3-45-rFi"/>
                                 </constraints>
@@ -787,7 +780,7 @@
                                 <rect key="frame" x="347" y="595" width="20" height="64"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3LB-vj-aJs">
-                                <rect key="frame" x="176" y="298" width="22" height="71"/>
+                                <rect key="frame" x="176.5" y="298" width="22" height="71"/>
                                 <connections>
                                     <action selector="buttonPlayPauseAction:" destination="kek-b5-3Gh" eventType="touchUpInside" id="9Dd-EL-67l"/>
                                 </connections>
@@ -830,17 +823,17 @@
         </scene>
     </scenes>
     <resources>
-        <image name="facebook" width="100" height="86"/>
+        <image name="facebook" width="48.240001678466797" height="41.279998779296875"/>
         <image name="ic_about" width="16" height="19"/>
-        <image name="ic_fullscreen_exit" width="24" height="24"/>
+        <image name="ic_fullscreen_exit" width="48" height="48"/>
         <image name="ic_live_stream" width="18" height="18"/>
         <image name="ic_pause" width="72" height="52"/>
         <image name="ic_programs" width="18" height="16"/>
-        <image name="ic_time" width="24" height="24"/>
-        <image name="instagram" width="20" height="19"/>
-        <image name="splashlogo" width="27" height="27"/>
-        <image name="twitter" width="98" height="84"/>
+        <image name="ic_time" width="48" height="48"/>
+        <image name="instagram" width="40" height="39"/>
+        <image name="twitter" width="47.279998779296875" height="40.319999694824219"/>
+        <image name="ucf" width="512" height="512"/>
         <image name="website" width="29" height="29"/>
-        <image name="youtube" width="86" height="64"/>
+        <image name="youtube" width="41.279998779296875" height="30.719999313354492"/>
     </resources>
 </document>
