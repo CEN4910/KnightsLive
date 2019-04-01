@@ -1,20 +1,7 @@
 //
 //  ResponseParser.swift
-//  ShalomKids
 //
-//  Created by Abin on 16/12/17.
-//  Copyright © 2017 Webandcrafts. All rights reserved.
-//
-
-
-
-//
-//  ResponseParser.swift
-//  ShalomTidings
-//
-//  Created by Webandcrafts on 28/10/17.
-//  Copyright © 2017 Webandcrafts. All rights reserved.
-//
+//  Created by Emmanuel on 01/20/19.
 
 import Foundation
 import UIKit

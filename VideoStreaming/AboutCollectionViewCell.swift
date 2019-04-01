@@ -2,9 +2,7 @@
 //  AboutCollectionViewCell.swift
 //  VideoStreaming
 //
-//  Created by Webandcrafts on 24/02/18.
-//  Copyright © 2018 Nikil. All rights reserved.
-//
+//  Created by Emmanuel on 01/20/19.
 
 import UIKit
 

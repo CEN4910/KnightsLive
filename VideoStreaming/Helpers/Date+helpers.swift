@@ -2,9 +2,7 @@
 //  Date+helpers.swift
 //  VideoStreaming
 //
-//  Created by WEBC-Mac on 11/06/18.
-//  Copyright © 2018 Nikil. All rights reserved.
-//
+//  Created by Emmanuel on 01/20/19.
 
 import Foundation
 extension Date {

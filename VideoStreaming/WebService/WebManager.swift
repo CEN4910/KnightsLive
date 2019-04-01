@@ -1,11 +1,8 @@
-    //
-    //  File.swift
-    //  ShalomTidings
-    //
-    //  Created by Webandcrafts on 28/10/17.
-    //  Copyright © 2017 Webandcrafts. All rights reserved.
-    //
+ 
+//  File.swift
     
+    
+//  Created by Emmanuel on 01/20/19.
     import Foundation
     
     import UIKit

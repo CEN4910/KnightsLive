@@ -1,10 +1,6 @@
 //
 //  WebserviceConstant.swift
-//  ShalomKids
-//
-//  Created by Abin on 16/12/17.
-//  Copyright © 2017 Webandcrafts. All rights reserved.
-//
+//  Created by Emmanuel on 01/20/19.
 
 import Foundation
 

@@ -2,10 +2,7 @@
 //  StreamViewController.swift
 //  VideoStreaming
 //
-//  Created by Nikil on 11/01/18.
-//  Copyright © 2018 Nikil. All rights reserved.
-//
-
+//  Created by Emmanuel on 01/20/19.
 import UIKit
 import youtube_ios_player_helper
 import AVKit
