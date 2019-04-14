@@ -23,13 +23,19 @@
 
 #if os(iOS) || os(tvOS)
     import UIKit
+typealias LayoutRelation = NSLayoutConstraint.Relation     // error: 'NSLayoutRelation' has been renamed to 'NSLayoutConstraint.Relation'
+typealias LayoutAttribute = NSLayoutConstraint.Attribute   // error: 'NSLayoutAttribute' has been renamed to 'NSLayoutConstraint.Attribute'
+typealias LayoutPriority = UILayoutPriority
 #else
     import AppKit
+typealias LayoutRelation = NSLayoutConstraint.Relation
+typealias LayoutAttribute = NSLayoutConstraint.Attribute
+typealias LayoutPriority = NSLayoutConstraint.Priority
 #endif
 
 public extension LayoutConstraint {
     
-    override public var description: String {
+    override var description: String {
         var description = "<"
         
         description += descriptionForObject(self)
@@ -66,7 +72,7 @@ public extension LayoutConstraint {
             }
         }
         
-        if self.priority != 1000.0 {
+        if self.priority.rawValue != 1000.0 {
             description += " ^\(self.priority)"
         }
         
@@ -77,15 +83,18 @@ public extension LayoutConstraint {
     
 }
 
-private func descriptionForRelation(_ relation: NSLayoutRelation) -> String {
+private func descriptionForRelation(_ relation: LayoutRelation) -> String {
     switch relation {
     case .equal:                return "=="
     case .greaterThanOrEqual:   return ">="
     case .lessThanOrEqual:      return "<="
+    #if swift(>=5.0)
+    @unknown default:           return "unknown"
+    #endif
     }
 }
 
-private func descriptionForAttribute(_ attribute: NSLayoutAttribute) -> String {
+private func descriptionForAttribute(_ attribute: LayoutAttribute) -> String {
     #if os(iOS) || os(tvOS)
         switch attribute {
         case .notAnAttribute:       return "notAnAttribute"
@@ -109,7 +118,10 @@ private func descriptionForAttribute(_ attribute: NSLayoutAttribute) -> String {
         case .trailingMargin:       return "trailingMargin"
         case .centerXWithinMargins: return "centerXWithinMargins"
         case .centerYWithinMargins: return "centerYWithinMargins"
-        }
+        #if swift(>=5.0)
+        @unknown default:           return "unknown"
+        #endif
+    }
     #else
         switch attribute {
         case .notAnAttribute:       return "notAnAttribute"
@@ -125,7 +137,10 @@ private func descriptionForAttribute(_ attribute: NSLayoutAttribute) -> String {
         case .centerY:              return "centerY"
         case .lastBaseline:         return "lastBaseline"
         case .firstBaseline:        return "firstBaseline"
-        }
+        #if swift(>=5.0)
+        @unknown default:           return "unknown"
+        #endif
+    }
     #endif
 }
 

@@ -302,7 +302,7 @@ class FullScreenViewController: UIViewController {
     }
     
     
-    func viewVideoTapAction(sender: UITapGestureRecognizer? = nil) {
+    @objc func viewVideoTapAction(sender: UITapGestureRecognizer? = nil) {
         
         
         
@@ -336,7 +336,7 @@ class FullScreenViewController: UIViewController {
     // Hide Play/Pause button
     
     
-    func hidePlayPauseButton()
+    @objc func hidePlayPauseButton()
     {
         
         
@@ -351,7 +351,7 @@ class FullScreenViewController: UIViewController {
     }
     
     
-    func adjustUIElements(){
+    @objc func adjustUIElements(){
         
         
         if videoPaused == true {
@@ -387,7 +387,7 @@ class FullScreenViewController: UIViewController {
     
     func transformViewToLansdcape(){
         var rotationDir : Int
-        if(UIDeviceOrientationIsLandscape(UIDevice.current.orientation)){
+        if(UIDevice.current.orientation.isLandscape){
             rotationDir = 1
         }else{
             rotationDir = -1

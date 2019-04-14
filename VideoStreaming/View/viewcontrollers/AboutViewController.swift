@@ -266,7 +266,7 @@ class AboutViewController: UIViewController {
     func buttonSiteOpenAction(index : Int) {
         
         let sampleUrl = visibleSite[index]
-        let instagramUrl = NSURL(string: sampleUrl as! String)
+        let instagramUrl = NSURL(string: sampleUrl )
         if UIApplication.shared.canOpenURL(instagramUrl! as URL)
         {
             UIApplication.shared.openURL(instagramUrl! as URL)

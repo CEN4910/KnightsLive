@@ -292,7 +292,7 @@ class StreamViewController: UIViewController ,VGPlayerDelegate,VGPlayerViewDeleg
     
     
     
-    func updateSchedule()
+    @objc func updateSchedule()
     {
         
         
@@ -453,7 +453,7 @@ class StreamViewController: UIViewController ,VGPlayerDelegate,VGPlayerViewDeleg
     }
     
     
-    func playPauseToggle()
+    @objc func playPauseToggle()
     {
         if !Toggleplaypause
         {
@@ -476,7 +476,7 @@ class StreamViewController: UIViewController ,VGPlayerDelegate,VGPlayerViewDeleg
         
     }
     
-    func pressed(sender: UIButton!)
+    @objc func pressed(sender: UIButton!)
     {
         
         addPlayPauseButtonOnOrientationChanges()

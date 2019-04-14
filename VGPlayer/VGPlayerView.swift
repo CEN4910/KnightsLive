@@ -75,7 +75,7 @@ open class VGPlayerView: UIView {
         return label
     }()
     open var closeButton : UIButton = {
-        let button = UIButton(type: UIButtonType.custom)
+        let button = UIButton(type: UIButton.ButtonType.custom)
         return button
     }()
     
@@ -87,11 +87,11 @@ open class VGPlayerView: UIView {
     }()
     open var timeSlider = VGPlayerSlider ()
     open var loadingIndicator = VGPlayerLoadingIndicator()
-    open var fullscreenButton : UIButton = UIButton(type: UIButtonType.custom)
+    open var fullscreenButton : UIButton = UIButton(type: UIButton.ButtonType.custom)
     open var timeLabel : UILabel = UILabel()
-    open var playButtion : UIButton = UIButton(type: UIButtonType.custom)
+    open var playButtion : UIButton = UIButton(type: UIButton.ButtonType.custom)
     open var volumeSlider : UISlider!
-    open var replayButton : UIButton = UIButton(type: UIButtonType.custom)
+    open var replayButton : UIButton = UIButton(type: UIButton.ButtonType.custom)
     open fileprivate(set) var panGestureDirection : VGPlayerViewPanGestureDirection = .horizontal
     fileprivate var isVolume : Bool = false
     fileprivate var sliderSeekTimeValue : TimeInterval = .nan
@@ -236,11 +236,11 @@ extension VGPlayerView {
         if self.vgPlayer != nil {
             switch self.vgPlayer!.gravityMode {
             case .resize:
-                self.playerLayer?.videoGravity = "AVLayerVideoGravityResize"
+                self.playerLayer?.videoGravity = convertToAVLayerVideoGravity("AVLayerVideoGravityResize")
             case .resizeAspect:
-                self.playerLayer?.videoGravity = "AVLayerVideoGravityResizeAspect"
+                self.playerLayer?.videoGravity = convertToAVLayerVideoGravity("AVLayerVideoGravityResizeAspect")
             case .resizeAspectFill:
-                self.playerLayer?.videoGravity = "AVLayerVideoGravityResizeAspectFill"
+                self.playerLayer?.videoGravity = convertToAVLayerVideoGravity("AVLayerVideoGravityResizeAspectFill")
             }
         }
     }
@@ -330,7 +330,7 @@ extension VGPlayerView {
         }, repeats: false)
     }
     internal func addDeviceOrientationNotifications() {
-        NotificationCenter.default.addObserver(self, selector: #selector(deviceOrientationWillChange(_:)), name: .UIApplicationWillChangeStatusBarOrientation, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(deviceOrientationWillChange(_:)), name: UIApplication.willChangeStatusBarOrientationNotification, object: nil)
     }
     
     internal func configurationVolumeSlider() {
@@ -380,7 +380,7 @@ extension VGPlayerView: UIGestureRecognizerDelegate {
 // MARK: - Event
 extension VGPlayerView {
     
-    internal func timeSliderValueChanged(_ sender: VGPlayerSlider) {
+    @objc internal func timeSliderValueChanged(_ sender: VGPlayerSlider) {
         self.isTimeSliding = true
         if let duration = self.vgPlayer?.totalDuration {
             let currentTime = Double(sender.value) * duration
@@ -388,12 +388,12 @@ extension VGPlayerView {
         }
     }
     
-    internal func timeSliderTouchDown(_ sender: VGPlayerSlider) {
+    @objc internal func timeSliderTouchDown(_ sender: VGPlayerSlider) {
         self.isTimeSliding = true
         self.timer.invalidate()
     }
     
-    internal func timeSliderTouchUpInside(_ sender: VGPlayerSlider) {
+    @objc internal func timeSliderTouchUpInside(_ sender: VGPlayerSlider) {
         self.isTimeSliding = true
         
         if let duration = self.vgPlayer?.totalDuration {
@@ -409,7 +409,7 @@ extension VGPlayerView {
         }
     }
     
-    internal func onPlayerButton(_ sender: UIButton) {
+    @objc internal func onPlayerButton(_ sender: UIButton) {
         if !sender.isSelected {
             self.vgPlayer?.play()
         } else {
@@ -417,7 +417,7 @@ extension VGPlayerView {
         }
     }
     
-    internal func onFullscreen(_ sender: UIButton) {
+    @objc internal func onFullscreen(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
         self.isFullScreen = sender.isSelected
         if isFullScreen {
@@ -431,7 +431,7 @@ extension VGPlayerView {
     /// Single Tap Event
     ///
     /// - Parameter gesture: Single Tap Gesture
-    open func onSingleTapGesture(_ gesture: UITapGestureRecognizer) {
+    @objc open func onSingleTapGesture(_ gesture: UITapGestureRecognizer) {
         self.isDisplayControl = !self.isDisplayControl
         displayControlView(self.isDisplayControl)
     }
@@ -439,7 +439,7 @@ extension VGPlayerView {
     /// Double Tap Event
     ///
     /// - Parameter gesture: Double Tap Gesture
-    open func onDoubleTapGesture(_ gesture: UITapGestureRecognizer) {
+    @objc open func onDoubleTapGesture(_ gesture: UITapGestureRecognizer) {
         
         guard self.vgPlayer == nil else {
             switch self.vgPlayer!.state {
@@ -461,7 +461,7 @@ extension VGPlayerView {
     /// Pan Event
     ///
     /// - Parameter gesture: Pan Gesture
-    open func onPanGesture(_ gesture: UIPanGestureRecognizer) {
+    @objc open func onPanGesture(_ gesture: UIPanGestureRecognizer) {
         let translation = gesture.translation(in: self)
         let location = gesture.location(in: self)
         let velocity = gesture.velocity(in: self)
@@ -530,16 +530,16 @@ extension VGPlayerView {
         self.isVolume ? (self.volumeSlider.value -= Float(velocityY / 10000)) : (UIScreen.main.brightness -= velocityY / 10000)
     }
 
-    internal func onCloseView(_ sender: UIButton) {
+    @objc internal func onCloseView(_ sender: UIButton) {
         delegate?.vgPlayerView(didTappedClose: self)
     }
     
-    internal func onReplay(_ sender: UIButton) {
+    @objc internal func onReplay(_ sender: UIButton) {
         self.vgPlayer?.replaceVideo((self.vgPlayer?.contentURL)!)
         self.vgPlayer?.play()
     }
     
-    internal func deviceOrientationWillChange(_ sender: Notification) {
+    @objc internal func deviceOrientationWillChange(_ sender: Notification) {
         let orientation = UIDevice.current.orientation
         let statusBarOrientation = UIApplication.shared.statusBarOrientation
         if statusBarOrientation == .portrait{
@@ -754,4 +754,9 @@ extension VGPlayerView {
             make.width.equalTo(30)
         }
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToAVLayerVideoGravity(_ input: String) -> AVLayerVideoGravity {
+	return AVLayerVideoGravity(rawValue: input)
 }
