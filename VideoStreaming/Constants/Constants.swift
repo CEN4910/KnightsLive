@@ -50,7 +50,7 @@ public var videoStreamURL:String = "https://mnmedias.api.telequebec.tv/m3u8/2988
 
 // Live Video Stream  URL from api
 
-public var videoStreamURLfromApi:String = "http://www.mocky.io/v2/"
+public var videoStreamURLfromApi:String = "" //"http://www.mocky.io/v2/
 public var videoStreamURLfromApi_endpoint:String = "" //"5b18c2c13000006000da137b"
 
 // API BASE URL

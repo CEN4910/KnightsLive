@@ -2,11 +2,13 @@
 //  ProgramsViewController.swift
 //  VideoStreaming
 //
-//  Created by Emmanuel on 01/20/19.
+//  Created by Manny on 02/01/19.
+
+
 import UIKit
 
 class ProgramsViewController: UIViewController {
-
+    
     
     @IBOutlet weak var titleHead: UILabel!
     @IBOutlet weak var titleAuthor: UILabel!
@@ -49,8 +51,8 @@ class ProgramsViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         
-            titleLogo.image = #imageLiteral(resourceName: "logo")
-
+        titleLogo.image = #imageLiteral(resourceName: "logo")
+        
         titleView.backgroundColor = hexToUiColor().hexStringToUIColor(hex: unselectedDaySelectionColor)
         collectionViewWeeks.dataSource = self
         collectionViewWeeks.delegate = self
@@ -123,7 +125,7 @@ class ProgramsViewController: UIViewController {
         setScrollToWeekDay(weekIndex: weekDayIndex)
         
         tableViewPrograms.backgroundColor = hexToUiColor().hexStringToUIColor(hex: daySelectionColor)
-
+        
         
     }
     
@@ -147,20 +149,20 @@ class ProgramsViewController: UIViewController {
         
     }
     
-//    
-//    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-//        return UIInterfaceOrientationMask.portrait //return the value as per the required orientation
-//    }
-//    
-//    override var shouldAutorotate: Bool {
-//        return false
-//    }
+    //
+    //    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+    //        return UIInterfaceOrientationMask.portrait //return the value as per the required orientation
+    //    }
+    //
+    //    override var shouldAutorotate: Bool {
+    //        return false
+    //    }
     
     
     public func getWeekDayIndex(week:String) -> Int {
         
         var weekIndex:Int = -1
-       print (week)
+        print (week)
         
         switch week {
             
@@ -214,7 +216,7 @@ class ProgramsViewController: UIViewController {
         case "mercredi":
             weekIndex = 3
             break
-           
+            
         case "jeudi":
             weekIndex = 4
             break
@@ -287,7 +289,7 @@ extension ProgramsViewController : UICollectionViewDelegate, UICollectionViewDat
             
             weekCell.viewWeekSelection.backgroundColor =  hexToUiColor().hexStringToUIColor(hex: unselectedDaySelectionColor)
             
-             weekCell.labelWeekName.textColor = hexToUiColor().hexStringToUIColor(hex: programcurrentdateColor)
+            weekCell.labelWeekName.textColor = hexToUiColor().hexStringToUIColor(hex: programcurrentdateColor)
         }
         else{
             
@@ -344,10 +346,10 @@ extension ProgramsViewController : UICollectionViewDelegate, UICollectionViewDat
         
         selectedDay[selectedDayIndex] = true
         collectionView.reloadData()
-      
+        
         
     }
-   
+    
     
 }
 
@@ -364,9 +366,9 @@ extension ProgramsViewController : UITableViewDelegate, UITableViewDataSource{
         
         programCell.labelProgramName.text = event.showTitle
         programCell.labelProgramTime.text = event.showTimeStart
-     
+        
         return programCell
-    
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -378,7 +380,7 @@ extension ProgramsViewController : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-      
+        
         
     }
     
@@ -390,9 +392,9 @@ extension ProgramsViewController
 {
     func setupUI()
     {
-
-//        self.titleHead.text = titleText//NSLocalizedString("title", comment: "title of the App")
-//        self.titleAuthor.text = authorName//NSLocalizedString("authorName", comment: "title author of the App")
+        
+        //        self.titleHead.text = titleText//NSLocalizedString("title", comment: "title of the App")
+        //        self.titleAuthor.text = authorName//NSLocalizedString("authorName", comment: "title author of the App")
     }
 }
 

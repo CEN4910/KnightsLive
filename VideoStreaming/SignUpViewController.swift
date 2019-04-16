@@ -10,11 +10,12 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
-    @IBOutlet weak var fullName: UITextField!
-    
-    @IBOutlet weak var email: UITextField!
-    
+    @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var phone: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +32,7 @@ class SignUpViewController: UIViewController {
     // the button action function
     @IBAction func sginUp(_ sender: Any)
     {
-        let url = URL(string: "http://3.210.109.51/api/receive.php") // locahost MAMP - change to point to your database server
+        let url = URL(string: "http://10.173.90.70/api/receive.php") // locahost MAMP - change to point to your database server
         
         var request = URLRequest(url: url!)
         request.httpMethod = "POST"
@@ -40,9 +41,12 @@ class SignUpViewController: UIViewController {
         
         // the POST string has entries separated by &
         
-        dataString = dataString + "&fullname=\(fullName.text!)" // add items as name and value
-        dataString = dataString + "&email=\(email.text!)"
+        dataString = dataString + "&username=\(userName.text!)" 
         dataString = dataString + "&password=\(password.text!)"
+        dataString = dataString + "&email=\(email.text!)"
+        dataString = dataString + "&name=\(name.text!)"
+        dataString = dataString + "&phone=\(phone.text!)"
+        
      
         // convert the post string to utf8 format
         
